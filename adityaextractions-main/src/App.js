@@ -9,7 +9,7 @@ import ProductDetails from "./pages/product/ProductDetails";
 import Footer from "./components/footer";
 import PrivacyPolicy from "./pages/privacy_policy";
 import ScrollToTop from "./components/ScrollToTop";
-import CattleFeed from "./pages/product/CattleFeedItem";
+import Certificate from "./pages/certificate/Certificate";
 function App() {
   return (
     <>
@@ -21,6 +21,7 @@ function App() {
           <Route path="/product" exact={true} element={<Product />} />
           <Route path="/about-us" exact={true} element={<AboutUs />} />
           <Route path="/contact-us" exact={true} element={<ContactUs />} />
+          <Route path="/certificate" exact={true} element={<Certificate />} />
           <Route
             path="/product/:name"
             exact={true}
@@ -36,11 +37,7 @@ function App() {
             exact={true}
             element={<PrivacyPolicy />}
           />
-          <Route
-            path="/product/cattle_feed"
-            exact={true}
-            element={<CattleFeed />}
-          />
+        
           
         </Routes>
         <Footer />
